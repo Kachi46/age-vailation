@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>JavaScript age validation</h2>
+    <p>Please input your age 18 and 21:</p>
+    <input id="numb">
+    <button type="button" onclick="myFunction()" > Submit </button>
+    <p id="demo"></p>
+    <script>
+        function myFunction(){
+            let x=document.getElementById("numb").value;
+            let text; 
+            if(isNaN(x)||x<18||x>21){
+                text="Abeg u still be pikin";
+            } 
+            else{
+                text="You don make am";
+            }
+            document.getElementById("demo").innerHTML=text;
+        }
+    </script>
+</body> 
+</html>
